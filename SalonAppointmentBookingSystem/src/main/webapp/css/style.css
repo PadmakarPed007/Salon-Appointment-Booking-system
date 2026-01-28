@@ -1,0 +1,323 @@
+
+.navbar {
+    background: linear-gradient(90deg, #111, #222);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    padding: 12px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f8d477 !important; 
+}
+
+.navbar-nav .nav-link {
+    color: #f1f1f1 !important;
+    font-size: 1rem;
+    margin: 0 8px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f8d477;
+    color: #000 !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #f8d477;
+    color: #000 !important;
+}
+
+.navbar-nav .btn-danger {
+    background: #dc3545;
+    border: none;
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .btn-danger:hover {
+    background: #b02a37;
+    transform: scale(1.05);
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/*salons jsp */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.salon-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.salon-card:hover {
+    transform: translateY(-6px);
+}
+
+.salon-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.rating {
+    background: #f8d477;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.btn-book {
+    background: #000;
+    color: #fff;
+    border-radius: 25px;
+    padding: 8px 18px;
+}
+
+.btn-book:hover {
+    background: #f8d477;
+    color: #000;
+}
+
+/*Services Jsp*/
+
+body {
+     background-color: #f8f9fa;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.service-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+   transform: translateY(-6px);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.btn-book {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 25px;
+}
+
+.btn-book:hover {
+    background-color: #0b5ed7;
+    color: white;
+}
+
+/*therapist*/
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.therapists-title {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Card */
+.therapist-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.therapist-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Image */
+.therapist-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Text */
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.speciality {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Button */
+.btn-book {
+    background-color: #198754;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 25px;
+}
+
+.btn-book:hover {
+    background-color: #157347;
+    color: white;
+}
+
+/*index jsp*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 90vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f")
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.btn-hero {
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+
+.btn-hero:hover {
+    background-color: #0b5ed7;
+    color: white;
+}
+
+/* Sections */
+.section-title {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Cards */
+.home-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-8px);
+}
+
+.home-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Why Choose */
+.why-section {
+    background-color: #0d6efd;
+    padding: 60px 0;
+}
+
+/*Book Appointment*/
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booking-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    
+}
+
+.booking-title {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn-book {
+    background-color: #0d6efd;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+.btn-book:hover {
+    background-color: #0b5ed7;
+    color: white;
+}
+
+
+
