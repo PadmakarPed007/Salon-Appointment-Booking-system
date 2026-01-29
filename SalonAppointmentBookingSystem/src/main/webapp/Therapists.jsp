@@ -29,7 +29,7 @@
           <h5 class="card-title">Rahul Sharma</h5>
           <p class="speciality">Hair Stylist</p>
           <p class="card-text">8+ years experience in modern hair styling.</p>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Appointment</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Appointment</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
           <h5 class="card-title">Anita Verma</h5>
           <p class="speciality">Facial Expert</p>
           <p class="card-text">Specialist in skin care & glow treatments.</p>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Appointment</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Appointment</a>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@
           <h5 class="card-title">Pooja Patil</h5>
           <p class="speciality">Massage Therapist</p>
           <p class="card-text">Certified therapist for body relaxation.</p>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Appointment</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Appointment</a>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
           <h5 class="card-title">Amit Kulkarni</h5>
           <p class="speciality">Hair Spa Expert</p>
           <p class="card-text">Expert in hair spa & scalp treatments.</p>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Appointment</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Appointment</a>
         </div>
       </div>
     </div>
@@ -85,7 +85,7 @@
           <h5 class="card-title">Sandeep Joshi</h5>
           <p class="speciality">Beard Stylist</p>
           <p class="card-text">Specialist in beard grooming & styling.</p>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Appointment</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Appointment</a>
         </div>
       </div>
     </div>
@@ -98,7 +98,7 @@
           <h5 class="card-title">Rahul Sharma</h5>
           <p class="speciality">Hair Stylist</p>
           <p class="card-text">8+ years experience in modern hair styling.</p>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Appointment</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Appointment</a>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@
           <h5>Luxury Hair Studio</h5>
           <p class="text-muted">Pune • Hair • Spa</p>
           <span class="rating">⭐ 4.8</span><br><br>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
           <h5>Urban Style Salon</h5>
           <p class="text-muted">Mumbai • Hair • Beard</p>
           <span class="rating">⭐ 4.6</span><br><br>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
           <h5>Glow Beauty Lounge</h5>
           <p class="text-muted">Nagpur • Spa • Skin</p>
           <span class="rating">⭐ 4.9</span><br><br>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
         </div>
       </div>
     </div>

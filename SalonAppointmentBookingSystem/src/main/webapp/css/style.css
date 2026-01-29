@@ -277,47 +277,39 @@ body {
     padding: 60px 0;
 }
 
-/*Book Appointment*/
+/*My Appointment */
 
 body {
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.booking-card {
+/* Title */
+.page-title {
+    font-weight: 800;
+    color: #fff;
+}
+
+/* Card */
+.appointment-card {
     border: none;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }
 
-.booking-title {
-    font-weight: 700;
-    color: #0d6efd;
+/* Table */
+.table {
+    background-color: #fff;
 }
 
-.form-label {
+.table th {
     font-weight: 600;
 }
 
-.form-control,
-.form-select {
-    border-radius: 10px;
-    padding: 10px;
+/* Responsive fix */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.6rem;
+    }
 }
-
-.btn-book {
-    background-color: #0d6efd;
-    color: white;
-    font-size: 1.1rem;
-    padding: 12px;
-    border-radius: 30px;
-}
-
-.btn-book:hover {
-    background-color: #0b5ed7;
-    color: white;
-}
-
-
-

@@ -30,7 +30,7 @@
           <h5 class="card-title">Hair Cut</h5>
           <p class="card-text">Professional haircut by expert stylists.</p>
           <span class="price">₹300</span><br>
-          <a href="bookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
           <h5 class="card-title">Facial</h5>
           <p class="card-text">Glow facial treatment for fresh skin.</p>
           <span class="price">₹800</span><br>
-          <a href="bookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
           <h5 class="card-title">Massage</h5>
           <p class="card-text">Relaxing body massage by professionals.</p>
           <span class="price">₹1200</span><br>
-          <a href="bookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
         </div>
       </div>
     </div>
@@ -69,7 +69,7 @@
           <h5 class="card-title">Hair Spa</h5>
           <p class="card-text">Nourishing hair spa treatment.</p>
           <span class="price">₹1000</span><br>
-          <a href="bookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
         </div>
       </div>
     </div>
@@ -82,7 +82,7 @@
           <h5 class="card-title">Beard Styling</h5>
           <p class="card-text">Perfect beard grooming and styling.</p>
           <span class="price">₹250</span><br>
-          <a href="bookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
         </div>
       </div>
     </div>
@@ -95,7 +95,7 @@
           <h5 class="card-title">Facial</h5>
           <p class="card-text">Glow facial treatment for fresh skin.</p>
           <span class="price">₹800</span><br>
-          <a href="bookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book mt-3">Book Now</a>
         </div>
       </div>
     </div>

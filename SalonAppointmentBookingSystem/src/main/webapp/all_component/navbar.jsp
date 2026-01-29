@@ -27,12 +27,10 @@
           <a class="nav-link" href="Therapists.jsp">Therapists</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="BookAppointment.jsp">Book Appointment</a>
-        </li>
+       
 
         <li class="nav-item">
-          <a class="nav-link" href="myAppointments.jsp">My Appointments</a>
+          <a class="nav-link" href="MyAppointment.jsp">My Appointments</a>
         </li>
 
         <li class="nav-item">
