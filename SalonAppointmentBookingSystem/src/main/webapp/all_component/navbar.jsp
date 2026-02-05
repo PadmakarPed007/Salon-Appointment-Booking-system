@@ -34,8 +34,8 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link btn btn-danger text-white ms-2" href="logout.jsp">
-            Logout
+          <a class="nav-link btn btn-danger text-white ms-2" href="login.jsp">
+            login
           </a>
         </li>
 
