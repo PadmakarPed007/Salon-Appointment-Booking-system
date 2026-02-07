@@ -30,7 +30,7 @@
           <h5>Luxury Hair Studio</h5>
           <p class="text-muted">Pune • Hair • Spa</p>
           <span class="rating">⭐ 4.8</span><br><br>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
           <h5>Urban Style Salon</h5>
           <p class="text-muted">Mumbai • Hair • Beard</p>
           <span class="rating">⭐ 4.6</span><br><br>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
         </div>
       </div>
     </div>
@@ -56,10 +56,49 @@
           <h5>Glow Beauty Lounge</h5>
           <p class="text-muted">Nagpur • Spa • Skin</p>
           <span class="rating">⭐ 4.9</span><br><br>
-          <a href="bookAppointment.jsp" class="btn btn-book">Book Now</a>
+          <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
         </div>
       </div>
     </div>
+    
+    <div class="col-md-4">
+  <div class="card salon-card">
+    <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=900&q=80"
+         class="card-img-top" alt="Salon">
+    <div class="card-body">
+      <h5>Elite Grooming Hub</h5>
+      <p class="text-muted">Pimpri • Hair • Beard</p>
+      <span class="rating">⭐ 4.7</span><br><br>
+      <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card salon-card">
+    <img src="https://images.unsplash.com/photo-1621605810052-809f1fd5d7e0?auto=format&fit=crop&w=900&q=80"
+         class="card-img-top" alt="Salon">
+    <div class="card-body">
+      <h5>Royal Touch Salon</h5>
+      <p class="text-muted">Nanded • Spa • Skin</p>
+      <span class="rating">⭐ 4.5</span><br><br>
+      <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card salon-card">
+    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80"
+         class="card-img-top" alt="Salon">
+    <div class="card-body">
+      <h5>Style & Shine Studio</h5>
+      <p class="text-muted">Alandi • Hair • Makeup</p>
+      <span class="rating">⭐ 4.8</span><br><br>
+      <a href="BookAppointment.jsp" class="btn btn-book">Book Now</a>
+    </div>
+  </div>
+</div>
 
   </div>
 </div>

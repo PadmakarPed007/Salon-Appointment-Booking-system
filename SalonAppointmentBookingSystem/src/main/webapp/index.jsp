@@ -12,14 +12,13 @@
 <%@include file="all_component/navbar.jsp" %>
 
 
-<!-- Hero Section -->
 <section class="hero-section">
   <div class="container text-center text-white">
     <h1 class="hero-title">Book Your Salon Appointment Easily</h1>
     <p class="hero-subtitle">
       Professional salons, expert therapists & premium services
     </p>
-    <a href="bookAppointment.jsp" class="btn btn-hero mt-3">
+    <a href="BookAppointment.jsp" class="btn btn-hero mt-3">
       Book Appointment
     </a>
   </div>
