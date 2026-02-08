@@ -30,7 +30,7 @@
        
 
         <li class="nav-item">
-          <a class="nav-link" href="MyAppointment.jsp">My Appointments</a>
+          <a class="nav-link" href="viewmybookappointment.jsp">MyBookAppointments</a>
         </li>
 
         <li class="nav-item">
