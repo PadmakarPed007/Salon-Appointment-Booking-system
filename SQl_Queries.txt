@@ -1,1 +1,131 @@
 -- sql queries
+-- ================================
+-- Database: Salon Appointment System
+-- File: schema.sql
+-- ================================
+
+-- Create Database
+CREATE DATABASE IF NOT EXISTS salon_booking_db;
+USE salon_booking_db;
+
+-- ================================
+-- 1. Users Table (Base Table)
+-- ================================
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    email VARCHAR(200) UNIQUE NOT NULL,
+    phone VARCHAR(20) UNIQUE,
+    password VARCHAR(200) NOT NULL,
+    role ENUM('CUSTOMER','STYLIST','ADMIN') NOT NULL,
+    status ENUM('ACTIVE','INACTIVE') DEFAULT 'ACTIVE'
+) ENGINE=InnoDB;
+
+-- ================================
+-- 2. Salons Table
+-- ================================
+CREATE TABLE salons (
+    salon_id INT AUTO_INCREMENT PRIMARY KEY,
+    salon_name VARCHAR(100) NOT NULL,
+    address TEXT NOT NULL,
+    contact_number VARCHAR(15),
+    owner_id INT NOT NULL,
+    status ENUM('ACTIVE','INACTIVE') DEFAULT 'ACTIVE',
+    FOREIGN KEY (owner_id) REFERENCES users(user_id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+-- ================================
+-- 3. Stylists Table
+-- ================================
+CREATE TABLE stylists (
+    stylist_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    salon_id INT NOT NULL,
+    specialization VARCHAR(100),
+    experience_years INT,
+    availability_status ENUM('AVAILABLE','UNAVAILABLE') DEFAULT 'AVAILABLE',
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (salon_id) REFERENCES salons(salon_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+-- ================================
+-- 4. Services Table
+-- ================================
+CREATE TABLE services (
+    service_id INT AUTO_INCREMENT PRIMARY KEY,
+    salon_id INT NOT NULL,
+    service_name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    duration INT NOT NULL,
+    FOREIGN KEY (salon_id) REFERENCES salons(salon_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+-- ================================
+-- 5. Appointments Table
+-- ================================
+CREATE TABLE appointments (
+    appointment_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT NOT NULL,
+    stylist_id INT NOT NULL,
+    service_id INT NOT NULL,
+    appointment_date DATE NOT NULL,
+    time_slot TIME NOT NULL,
+    status ENUM('PENDING','CONFIRMED','CANCELLED') DEFAULT 'PENDING',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (customer_id) REFERENCES users(user_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (stylist_id) REFERENCES stylists(stylist_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (service_id) REFERENCES services(service_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+-- ================================
+-- 6. Availability Table
+-- ================================
+CREATE TABLE availability (
+    availability_id INT AUTO_INCREMENT PRIMARY KEY,
+    stylist_id INT NOT NULL,
+    available_date DATE NOT NULL,
+    start_time TIME NOT NULL,
+    end_time TIME NOT NULL,
+    FOREIGN KEY (stylist_id) REFERENCES stylists(stylist_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+-- ================================
+-- 7. Ratings Table
+-- ================================
+CREATE TABLE ratings (
+    rating_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT NOT NULL,
+    stylist_id INT NOT NULL,
+    rating INT CHECK (rating BETWEEN 1 AND 5),
+    feedback TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (customer_id) REFERENCES users(user_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (stylist_id) REFERENCES stylists(stylist_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+-- ================================
+-- 8. Indexes (Performance Optimization)
+-- ================================
+CREATE INDEX idx_appointment_date ON appointments(appointment_date);
+CREATE INDEX idx_appointment_status ON appointments(status);
+CREATE INDEX idx_stylist_id ON appointments(stylist_id);
