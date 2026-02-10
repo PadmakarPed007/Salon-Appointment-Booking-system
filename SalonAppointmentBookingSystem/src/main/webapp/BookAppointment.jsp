@@ -17,6 +17,10 @@
         border-radius: 15px;
         box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
+    .link {
+        text-align: center;
+        margin-top: 15px;
+    }
 </style>
 </head>
 
@@ -28,12 +32,12 @@
             <div class="card p-4">
                 <h3 class="text-center mb-4 text-primary">Book Appointment</h3>
 
-                <!-- FORM -->
-                <form action="BookAppointmentServlet" method="post">
+               
+                <form action="SaveServlet" method="post">
 
                     <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" name="name" class="form-control" required>
+                        <input type="text" name="fullname" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
@@ -42,29 +46,34 @@
                     </div>
 
                     <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
                         <label class="form-label">Mobile Number</label>
-                        <input type="text" name="mobile" class="form-control" required>
+                        <input type="text" name="mobileno" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Service</label>
-                        <select name="service" class="form-select" required>
+                        <select name="services" class="form-select" required>
                             <option value="">-- Select Service --</option>
-                            <option>Haircut</option>
-                            <option>Facial</option>
-                            <option>Spa</option>
-                            <option>Massage</option>
+                            <option value="Haircut">Haircut</option>
+                            <option value="Facial">Facial</option>
+                            <option value="Spa">Spa</option>
+                            <option value="Massage">Massage</option>
                         </select>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Appointment Date</label>
-                        <input type="date" name="date" class="form-control" required>
+                        <input type="date" name="appointmentdate" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Appointment Time</label>
-                        <input type="time" name="time" class="form-control" required>
+                        <input type="time" name="appointmenttime" class="form-control" required>
                     </div>
 
                     <div class="d-grid">
@@ -72,9 +81,13 @@
                             Book Appointment
                         </button>
                     </div>
+                    
+                     <div class="link">
+                      <a href="viewmybookappointment.jsp">ViewMyBookAppointment</a>
+                       </div>
 
                 </form>
-                <!-- FORM END -->
+                
 
             </div>
         </div>
