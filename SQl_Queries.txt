@@ -129,3 +129,8 @@ CREATE TABLE ratings (
 CREATE INDEX idx_appointment_date ON appointments(appointment_date);
 CREATE INDEX idx_appointment_status ON appointments(status);
 CREATE INDEX idx_stylist_id ON appointments(stylist_id);
+
+
+--- Chnages -----
+alter table stylists rename to therapists;
+alter table therapists rename column stylist_id to therapist_id;
