@@ -18,9 +18,9 @@ public class SalonDao {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/salonappointment",
+                "jdbc:mysql://localhost:3306/salon_booking",
                 "root",
-                "1010"
+                "siya"
             );
         } catch (Exception e) {
             e.printStackTrace();
@@ -55,7 +55,7 @@ public class SalonDao {
     }
 
 
-    // View Book Appoinment //
+    // View Book Appointment //
     public static List<Salon> getAll() {
         List<Salon> list = new ArrayList<>();
         try {
