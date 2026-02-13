@@ -35,7 +35,7 @@ public class SalonDao {
             Connection con = getConnection();
 
             PreparedStatement ps = con.prepareStatement(
-                "INSERT INTO salon(fullname,email,password,mobileno,services,appointmentdate,appointmenttime) VALUES(?,?,?,?,?,?,?)"
+                "INSERT INTO appointments(full_name,email,password,mobile_number,service,appointment_date,appointment_time) VALUES(?,?,?,?,?,?,?)"
             );
 
             ps.setString(1, s.getFullName());
@@ -45,7 +45,7 @@ public class SalonDao {
             ps.setString(5, s.getServices());
             ps.setDate(6, java.sql.Date.valueOf(s.getAppointmentDate()));
             ps.setTime(7, java.sql.Time.valueOf(s.getAppointmentTime()));
-
+            
             status = ps.executeUpdate();
             con.close();
         } catch (Exception e) {
@@ -60,19 +60,19 @@ public class SalonDao {
         List<Salon> list = new ArrayList<>();
         try {
             Connection con = getConnection();
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM salon");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM appointments");
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
                 Salon s = new Salon();
-                s.setId(rs.getInt("id"));
-                s.setFullName(rs.getString("fullname"));
+                s.setId(rs.getInt("appointment_id"));
+                s.setFullName(rs.getString("full_name"));
                 s.setEmail(rs.getString("email"));
                 s.setPassword(rs.getString("password"));
-                s.setMobileNo(rs.getString("mobileno"));
-                s.setServices(rs.getString("services"));
-                s.setAppointmentDate(rs.getDate("appointmentdate").toLocalDate());
-                s.setAppointmentTime(rs.getTime("appointmenttime").toLocalTime());
+                s.setMobileNo(rs.getString("mobile_number"));
+                s.setServices(rs.getString("service"));
+                s.setAppointmentDate(rs.getDate("appointment_date").toLocalDate());
+                s.setAppointmentTime(rs.getTime("appointment_time").toLocalTime());
                 list.add(s);
             }
             con.close();
@@ -88,7 +88,7 @@ public class SalonDao {
         try {
             Connection con = getConnection();
             PreparedStatement ps =
-                con.prepareStatement("DELETE FROM salon WHERE id=?");
+                con.prepareStatement("DELETE FROM appointments WHERE appointment_id=?");
             ps.setInt(1, id);
             status = ps.executeUpdate();
             con.close();

@@ -5,7 +5,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Salon Appoinement Shop</title>
+<title>Salon Appointment Shop</title>
 <%@ include file="all_component/allcss.jsp" %>
 </head>
 <body>
