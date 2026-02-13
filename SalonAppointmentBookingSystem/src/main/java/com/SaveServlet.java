@@ -32,7 +32,11 @@ public class SaveServlet extends HttpServlet {
         s.setServices(services);
         s.setAppointmentDate(appointmentDate);
         s.setAppointmentTime(appointmentTime);
-
+        System.out.println("****************************************************************************************** "+s); 
+        System.out.println(s.getFullName()); 
+        System.out.println(s.getEmail()); 
+        System.out.println(s.getPassword()); 
+        
         SalonDao.save(s);
 
         response.sendRedirect("viewmybookappointment.jsp");
